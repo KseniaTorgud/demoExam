@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <form action="api.php" method="post">
+        <label>Логин</label>
+        <input type="text" data-testid="reg-login" name="login">
+        <label>Пароль</label>
+        <input type="password" data-testid="reg-password" name="password">
+        <label>ФИО</label>
+        <input type="text" data-testid="reg-fullname" name="name">
+        <label>Телефон</label>
+        <input type="phone" data-testid="reg-phone" name="phone">
+        <label>Почта</label>
+        <input type="email" data-testid="reg-email" name="email">
+
+        <br><br>
+        <button type="submit" data-testid="reg-submit">Создать пользователя</button>
+    </form> 
+</body>
+</html>
