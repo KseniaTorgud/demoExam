@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <main>
+        <label for="login">Логин</label>
+        <input type="text" data-testid="reg-login" name="login">
+        
+        <label for="password">Пароль</label>
+        <input type="password" data-testid="reg-password" name="password">
+        
+        <label for="fio">ФИО</label>
+        <input type="text" data-testid="reg-fullname" name="fio">
+
+        <label for="tel">Телефон</label>
+        <input type="tel" data-testid="reg-phone" name="tel">
+
+        <label for="email">Email</label>
+        <input type="email" data-testid="reg-email" name="email">
+
+        <label for="date">Дата рождения</label>
+        <input type="date" name="date">
+
+        <label for="radio">Пол</label>
+        <input type="text" name="radio">
+
+        <label>
+            <input type="checkbox" name="terms" required>
+            Я прочитал и принимаю условия использования
+        </label>
+
+        <button data-testid="reg-submit">Создать пользователя</button>
+    </main>
+</body>
+</html>
