@@ -5,34 +5,26 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
-        * { box-sizing: border-box; }
-        .box1{
-            padding: 10px;
-            border: 2px solid;
-            margin-bottom: 20px;
-        }
-        .box2{
+        .profile{
+            width: 300px;
             padding: 20px;
-            border: 2px solid;
-            margin-bottom: 20px;
+            border: 1px solid #ddd;
+            border-radius: 12px;
+            box-shadow: 2 2px 2px rgba(0, 0, 0, 0.1);
+            text-align: center;
         }
-        .box3{
-            padding: 40px;
-            border: 2px solid;
-            margin-bottom: 20px;
+        #art{
+            border-radius: 50%;
+            text-align: center;
         }
     </style>
 </head>
 <body>
     <main>
-        <div class="box1">
-            <p>Тут будет небольшой текст</p>
-        </div>
-        <div class="box2">
-            <p>Тут будет небольшой текст</p>
-        </div>
-        <div class="box3">
-            <p>Тут будет небольшой текст</p>
+        <div class="profile">
+            <img src="avatar.jpg" alt="Аватар" id="art">
+            <h2>Иван Иванов</h2>
+            <p>Веб-разработчик</p>
         </div>
     </main>
 </body>
