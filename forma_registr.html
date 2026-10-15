@@ -3,37 +3,48 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Регистрация — Конференции.РФ</title>
 </head>
 <body>
+    <header>
+        <h1>Регистрация</h1>
+    </header>
     <main>
-        <label for="login">Логин</label>
-        <input type="text" data-testid="reg-login" name="login">
-        
-        <label for="password">Пароль</label>
-        <input type="password" data-testid="reg-password" name="password">
-        
-        <label for="fio">ФИО</label>
-        <input type="text" data-testid="reg-fullname" name="fio">
+        <form action="register.php" method="post">
+            <label for="login">Логин</label>
+            <input id="login" type="text" data-testid="reg-login" name="login" required>
 
-        <label for="tel">Телефон</label>
-        <input type="tel" data-testid="reg-phone" name="tel">
+            <label for="password">Пароль</label>
+            <input id="password" type="password" data-testid="reg-password" name="password" required>
 
-        <label for="email">Email</label>
-        <input type="email" data-testid="reg-email" name="email">
+            <label for="fullname">ФИО</label>
+            <input id="fullname" type="text" data-testid="reg-fullname" name="fullname" required>
 
-        <label for="date">Дата рождения</label>
-        <input type="date" name="date">
+            <label for="phone">Телефон</label>
+            <input id="phone" type="tel" data-testid="reg-phone" name="phone" required>
 
-        <label for="radio">Пол</label>
-        <input type="text" name="radio">
+            <label for="email">Email</label>
+            <input id="email" type="email" data-testid="reg-email" name="email" required>
 
-        <label>
-            <input type="checkbox" name="terms" required>
-            Я прочитал и принимаю условия использования
-        </label>
+            <label for="birthdate">Дата рождения</label>
+            <input id="birthdate" type="date" name="birthdate">
 
-        <button data-testid="reg-submit">Создать пользователя</button>
+            <fieldset>
+                <legend>Пол</legend>
+                <label><input type="radio" name="gender" value="male"> Мужской</label>
+                <label><input type="radio" name="gender" value="female"> Женский</label>
+            </fieldset>
+
+            <label>
+                <input type="checkbox" name="terms" required>
+                Я принимаю условия использования
+            </label>
+
+            <button type="submit" data-testid="reg-submit">Создать пользователя</button>
+        </form>
     </main>
+    <footer>
+        <p>&copy; 2026 Конференции.РФ</p>
+    </footer>
 </body>
 </html>
