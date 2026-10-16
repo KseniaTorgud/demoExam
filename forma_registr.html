@@ -4,6 +4,37 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Регистрация — Конференции.РФ</title>
+    <style>
+        form{
+            display: flex;
+            justify-content: center; /*центрирует по горизонтали*/
+            align-items: center; /* центрирует по вертикали*/
+            flex-direction: column;
+        }
+        label{
+            padding: 4px;
+            border-radius: 9px;
+            border: 2px solid #676464 ;
+            margin: 10px;
+        }
+        h1{
+            text-align: center;
+        }
+        /* делаем так,. чтобы при наведении менялся цвет границы*/
+        input{
+            border: 2px solid #ccc;
+            padding: 7px;
+            border-radius: 6px;
+            outline: none; /* убираем стандартную обводку браузера */
+        }
+        input:focus{
+            border-color: #479d2a;
+        }
+        button:hover{
+            transform: scale(1.05);
+            cursor: pointer;
+        }
+    </style>
 </head>
 <body>
     <header>
