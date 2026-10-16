@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Сайт кофейни</title>
+    <style>
+        header{
+            border-radius: 4px;
+            background-color: rgb(241, 212, 175);
+            color: rgb(70, 16, 16);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 17px;
+        }
+        nav{
+            color: black;
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+        .section{
+            color: rgb(71, 20, 20);
+            padding: 17px;
+        }
+        #zacaz{
+            border: 2px solid #531919;
+            border-radius: 8px;
+            background-color: #ffd1d1;
+        }
+        .cofe{
+            border: 2px solid rgb(241, 212, 175);
+            margin: 15px;
+            padding: 8px;
+            border-radius: 8px;
+        }
+        #section-container{
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            justify-content: center;
+        }
+        h2{
+            margin: 13px;
+            color: rgb(70, 16, 16);
+        }
+        section{
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            justify-content: center;
+        }
+        .desert{
+            border: 2px solid rgb(70, 16, 16);
+            margin: 15px;
+            padding: 8px;
+            border-radius: 8px;
+            text-align: center;
+        }
+        button{
+            background-color: rgb(241, 212, 175);
+            border: 1px solid rgb(70, 16, 16);
+            
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Кофейня домик у озера</h1>
+        <nav>
+            <a href="/program">Программа лояльности</a>
+            <a href="/spikers">Новинки</a>
+            <a href="/register">Личный кабинет</a>
+        </nav>
+    </header>
+    <main>
+        
+        <h2>Самое популярное в нашем ассортименте</h2>
+        <div id="section-container">
+            
+            <article class="cofe">
+                <p>Тыквенный латте</p>
+                <p>450 $</p>
+            </article>
+            <article class="cofe">
+                <p>Какао полярная ночь</p>
+                <p>230 $</p>
+            </article>
+            <article class="cofe">
+                <p>Облепиховый чай</p>
+                <p>37 $</p>
+            </article>
+        </div>
+        <h2>Вывирайте десерт в подарок</h2>
+        <section>
+            <article class="desert">
+                <p>Нежная радость (террамису)</p>
+                <button>Выбрать</button>
+            </article>
+            <article class="desert">
+                <p>Кокосовое печенье</p>
+                <button>Выбрать</button>
+            </article>
+            <article class="desert">
+                <p>Круассан-сендвич</p>
+                <button>Выбрать</button>
+            </article>
+        </section>
+
+        <div class="section">
+            <h3>Закажи кофе прямо сейчас и получи дессерт в подарок</h3>
+            <button id="zacaz">Заказть</button>
+        </div>
+    </main>
+    <footer>
+        <p>&copy; 2026 Кофейня домик у озера</p>
+    </footer>
+</body>
+</html>
