@@ -3,7 +3,31 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>internet_magazin</title>
+    <style>
+        article:hover{
+            transform: scale(1.05);
+            cursor: pointer;
+        }
+        button{
+            border: 2px solid #531919;
+            border-radius: 8px;
+            background-color: #ffd1d1;
+        }
+        .main-container{
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            justify-content: center;
+        }
+        article{
+            border: 2px solid #531919;
+            margin: 13px;
+            padding: 8px;
+        }
+        h1{
+            text-align: center;
+        }
+    </style>
 </head>
 <body>
     <header>
@@ -15,6 +39,7 @@
     </header>
     <main>
         <h1>Основное меню</h1>
+        <div class="main-container">
         <article>
             <img src="placeholder-product-1.jpg" alt="Картинка товара 1">
             <h2>Товар 1</h2>
@@ -42,6 +67,7 @@
             <p>1000</p>
             <button>Купить</button>
         </article>
+        </div>
     </main>
 
     <footer>
