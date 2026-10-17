@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>flex-01</title>
+    <style>
+        .row{
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+            height: 200px;
+            background-color: rgb(177, 174, 174);
+            justify-content: space-between;
+        }
+        article{
+            margin: 23px;
+            height: 100px;
+            width: 100px;
+            text-align: center;
+            border: 2px solid #2c2b2b;
+            
+        }
+        h1{
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="/katalog">Каталог</a>
+            <a href="/korzina">Корзина</a>
+            <a href="/profil">Профиль</a>
+        </nav>
+    </header>
+    <main>
+        <h1>Основное меню</h1>
+        <div class="row">
+        <article>
+            <h2>Товар 1</h2>
+            <p>1200</p>
+            <button>Купить</button>
+        </article>
+
+        <article>
+            <h2>Товар 2</h2>
+            <p>2200</p>
+            <button>Купить</button>
+        </article>
+
+        <article>
+            <h2>Товар 3</h2>
+            <p>500</p>
+            <button>Купить</button>
+        </article>
+
+        <article>
+            <h2>Товар 4</h2>
+            <p>1000</p>
+            <button>Купить</button>
+        </article>
+        </div>
+    </main>
+</body>
+</html>
