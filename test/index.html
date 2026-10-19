@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>COFE</title>
+    <style>
+        h1{
+            text-align: center;
+            color: rgb(75, 10, 10);
+        }
+        header{
+            background-color: rgb(245, 205, 153);
+        }
+        main{
+            display: flex;
+            justify-content: center;
+            gap: 40px;
+            flex-wrap: wrap
+        }
+        section{
+            border: 2px solid rgb(75, 10, 10);
+            padding: 12px;
+            background-color: rgb(255, 250, 244);
+            border-radius: 13px;
+        }
+        section:hover{
+            transform: scale(1.05);
+            cursor: pointer;
+        }
+        @media (max-width: 390px) {
+        main{
+            flex-direction: column;
+            gap: 10px;
+        }
+    }
+
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <h1>Кофейня</h1>
+        </nav>
+    </header>
+    <main>
+        <section>
+            <h2>Раф на кокосовм</h2>
+            <p>Описание напитка</p>
+            <p>230 руб</p>
+        </section>
+        <section>
+            <h2>Тыквенный латте</h2>
+            <p>Описание напитка</p>
+            <p>450 руб</p>
+        </section>
+        <section>
+            <h2>Облепиховый чай</h2>
+            <p>Описание напитка</p>
+            <p>230 руб</p>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2026 Кофейня</p>
+    </footer>
+    <script src="main.js"></script>
+</body>
+</html>
