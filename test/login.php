@@ -11,10 +11,10 @@
     </header>
     <main>
         <form action="login.php" method="post">
-            <lable for="login" >Логин</lable>
-            <input type="text" name="login">
-            <lable for="password" >Пароль</lable>
-            <input type="password" name="password">
+            <label for="login" >Логин</label>
+            <input id="login" type="text" name="login">
+            <label for="password" >Пароль</label>
+            <input id="password" type="password" name="password">
 
             <button type="submit">Войти</button>
         </form>
