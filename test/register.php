@@ -37,12 +37,12 @@ if ($_SERVER["REQUEST_METHOD"] === "POST"){
     </header>
     <main>
         <form action="register.php" method="post">
-            <lable for="login" >Логин</lable>
-            <input type="text" name="login">
-            <lable for="password" >Пароль</lable>
-            <input type="password" name="password">
-            <lable for="email" >Почта</lable>
-            <input type="email" name="email">
+            <label for="login" >Логин</label>
+            <input id="login" type="text" name="login">
+            <label for="password" >Пароль</label>
+            <input id="password" type="password" name="password">
+            <label for="email" >Почта</label>
+            <input id="email" type="email" name="email">
 
             <button type="submit">Отправить</button>
         </form>
