@@ -1,33 +1,6 @@
-<!DOCTYPE html>
-<html lang="ru">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    <header>
-        <h1>Страница входа, введите ваши данные</h1>
-    </header>
-    <main>
-        <form action="login.php" method="post">
-            <label for="login" >Логин</label>
-            <input id="login" type="text" name="login">
-            <label for="password" >Пароль</label>
-            <input id="password" type="password" name="password">
-
-            <button type="submit">Войти</button>
-        </form>
-    </main> 
-    <footer>
-        <a href="register.php">НЕ зарегестрированы?</a>
-    </footer>
-</body>
-</html>
-
 <?php
-require "db.php";
 session_start();
+require "db.php";
 
 if ($_SERVER["REQUEST_METHOD"] === "POST"){
     $login = $_POST["login"];
@@ -58,3 +31,32 @@ if ($_SERVER["REQUEST_METHOD"] === "POST"){
     }
     
 }
+?>
+
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <h1>Страница входа, введите ваши данные</h1>
+    </header>
+    <main>
+        <form action="login.php" method="post">
+            <label for="login" >Логин</label>
+            <input id="login" type="text" name="login">
+            <label for="password" >Пароль</label>
+            <input id="password" type="password" name="password">
+
+            <button type="submit">Войти</button>
+        </form>
+    </main> 
+    <footer>
+        <a href="register.php">НЕ зарегестрированы?</a>
+    </footer>
+</body>
+</html>
+
