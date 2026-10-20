@@ -8,7 +8,7 @@ $dsn = "mysql:host=$host;dbname=$dbname;charset=utf8mb4";
 
 try{
     $pdo = new PDO($dsn, $user, $pass);
-    echo "Подключение успешно";
+    $pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
 }catch(PDOException $e){
     echo "Ошибка подключения".$e->getMessage();
 }
