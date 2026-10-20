@@ -1,3 +1,29 @@
+<?php
+require "db.php";
+
+if ($_SERVER["REQUEST_METHOD"] === "POST"){
+    $login = $_POST["login"];
+    $password = $_POST["password"];
+    $email = $_POST["email"];
+
+    if (empty($login)||empty($password)||empty($email)){
+        echo "Введите данные";
+    }else{
+        $hash = password_hash($password, PASSWORD_DEFAULT);
+        $stmt = $pdo->prepare(
+            "INSERT INTO users(login, password, email)
+            VALUES(:login, :password, :email)"
+        );
+        $stmt->execute([
+            "login" =>$login,
+            "password" => $hash,
+            "email" => $email
+        ]);
+    }
+}
+?>
+
+
 <!DOCTYPE html>
 <html lang="ru">
 <head>
@@ -27,26 +53,3 @@
 </body>
 </html>
 
-<?php
-require "db.php";
-
-if ($_SERVER["REQUEST_METHOD"] === "POST"){
-    $login = $_POST["login"];
-    $password = $_POST["password"];
-    $email = $_POST["email"];
-
-    if (empty($login)||empty($password)||empty($email)){
-        echo "Введите данные"
-    }else{
-        $hash = password_hash($password, PASSWORD_DEFAULT);
-        $stmt = $pdo->prepare(
-            "INSERT INTO users(login, password, email)
-            VALUES(:login, :password, :email)"
-        );
-        $stmt->execute([
-            "login" =>$login,
-            "password" => $password,
-            "email" => $email
-        ]);
-    }
-}
